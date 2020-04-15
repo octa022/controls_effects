@@ -1,0 +1,95 @@
+html, body{
+    margin: 0
+}
+body{
+    background-color: #eee;
+    font-family: Roboto, Arial, Helvetica;
+    padding: 2rem
+}
+div {
+    display: inline-block;
+    margin: 5px
+}
+.card{
+    background-color: white;
+    border-radius: 2px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 
+        0 2px 5px rgba(0,0,0,0.16),
+        0 2px 10px rgba(0,0,0,0.12);
+}
+
+.card-two{
+    background-color: white;
+    border-radius: 2px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.card-two::before, .card-two::after {
+    content: '';
+    width: 30%;
+    height: 10px;
+    top: 93%;
+    left: 69%;
+    position: absolute;
+    transform: rotate(5deg);
+    background-color: transparent;
+    z-index: -1;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.3)
+}
+
+.card-two::before {
+    left: 1%;
+    transform: rotate(-5deg);
+}
+
+.card-three{
+    background-color: white;
+    border-radius: 2px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.card-three::after {
+    content: '';
+    width: 30%;
+    height: 10px;
+    top: 93%;
+    left: 69%;
+    position: absolute;
+    transform: rotate(5deg);
+    background-color: transparent;
+    z-index: -1;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.3)
+}
+
+.box-threed {
+    background-color: rgb(250, 50, 50);
+    width: 300px;
+    height: 200px;
+    box-shadow: 
+        3px 3px 0px 3px rgb(220, 20, 20),
+        12px 12px 4px rgba(0,0,0,0.2)
+}
+
+
+.box-threed:active { 
+    box-shadow: 
+        2px 2px 0px 2px rgb(220, 20, 20),
+        12px 12px 4px rgba(0,0,0,0.2)
+}
+
+h1.threed {
+    font-size: 56px;
+    color: rgb(50,50,150);
+    text-shadow:
+        1px 1px 2px rgb(40,40,140),
+        2px 2px 2px rgb(35,35,135),
+        3px 3px 2px rgb(30,30,130),
+        4px 4px 2px rgb(25,25,125),
+        10px 10px 4px rgba(0,0,0,0.2)
+}
