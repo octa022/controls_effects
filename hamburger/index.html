@@ -2,68 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburger</title>
+    <meta name="description" content="Sidebar basico responsive accionado por un toggle, realizado solo con html, css, js.">
+    <meta name="keywords" content="HTML,CSS,JS">
+    <meta name="author" content="octa022@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./menu.css">
-    <link rel="stylesheet" href="./sidebar.css">
+    <!-- <link rel="stylesheet" href="./menu.css"> -->
+    <!-- <link rel="stylesheet" href="./sidebar.css"> -->
 </head>
 <body>
 
-    <div class="overflow-control toggled" id="wrapper">
-        
-            <!-- Sidebar -->
-            <div class="lateral-menu" id="sidebar-wrapper">
-                <div class="sidebar">
-                    <div class="sidebar-heading">
-                        Menú <button class="toggle-menu"><span></span></button>
-                    </div>
+    <div class="toggled" id="wrapper">
 
-                    <div class="list-group">
-                        <a href="">Home</a>
-                        <a href="">Cursos</a>
-                        <a href="">Videos</a>
-                    </div>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sidebar">
+                <div class="sidebar-heading">
+                    Menú
+                    <button type="button" class="menu-toggle" id="menu-toggle" aria-label="menu toggle">
+                        <span aria-hidden="true"></span>
+                    </button>
                 </div>
-            </div> <!--  End - lateral-menu -->
-            <!-- /#sidebar-wrapper -->
+
+                <div class="list-group">
+                    <a href="">Home</a>
+                    <a href="">Cursos</a>
+                    <a href="">Videos</a>
+                </div> <!-- End - .list-group -->
+            </div> <!-- End - .sidebar -->
+        </div> <!-- End - #sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar">
+                <div class="button-nav">
+                    <button type="button" class="menu-toggle" id="menu-toggle" aria-label="menu toggle">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <a href="#">Home</a>
+                <a href="#">Cursos</a>
+                <a href="#">Videos</a>
+
+            </nav>
+            <header class="hero-image">
+                <div>
+                    <h1>Hero Images</h1>
+                    <p>Foto o imagen principal</p>
+                </div>
+            </header>
+
+            <main>
+                <p>
+                    Una hero image es la foto principal o el primer gráfico que se ve de una landing page. Suele situarse en la zona principal que se ve nada más llegar a la página sin necesidad de realizar scroll.
+                </p>
+
+                <p>
+                    El objetivo de las hero images para landing pages es atraer de inmediato a los usuarios y mostrarles de qué trata tu sitio web y su contenido.
+                </p>
+            </main>
+        </div> <!-- End - #page-content-wrapper -->
+
+    </div> <!--End -  #wrapper -->
 
 
-            <!-- Page Content -->
-            <div class="content"  id="page-content-wrapper">
-                <nav class="nav">
-                    <div class="button-nav">
-                      <button type="button" class="tcon toggle-menu tcon-menu--arrow tcon-menu--arrow360left" aria-label="toggle menu">
-                        <span class="tcon-menu__lines" aria-hidden="true"></span>
-                        <span class="tcon-visuallyhidden">toggle menu</span>
-                      </button>
-                    </div>
-
-                    <a href="#">Home</a>
-                    <a href="#">Cursos</a>
-                    <a href="#">Videos</a>
-
-                </nav>
-                <header class="hero-image">
-                    <div>
-                        <h1>Hero Images</h1>
-                        <p>Foto o imagen principal</p>
-                    </div>
-                </header>
-
-                <main>
-                    <p>
-                        Una hero image es la foto principal o el primer gráfico que se ve de una landing page. Suele situarse en la zona principal que se ve nada más llegar a la página sin necesidad de realizar scroll.
-                    </p>
-
-                    <p>
-                        El objetivo de las hero images para landing pages es atraer de inmediato a los usuarios y mostrarles de qué trata tu sitio web y su contenido.
-                    </p>
-                </main>
-            </div>
-            <!-- End - content -->
-    </div> <!-- End - overflow-control -->
-    
     <!-- 
         Recurso para background
         https://www.pexels.com/ 
