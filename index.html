@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Controls and Effects</title>
+    <meta name="description" content="controles y efectos con HTML, CSS y JS.">
+    <meta name="keywords" content="HTML,CSS,JS">
+    <meta name="author" content="octa022@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        html,
+        body {
+            margin: 0;
+        }
+
+        body {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            max-width: 100%;
+            position: relative;
+        }
+        main {
+            flex: 1 0 auto;
+            max-width: 100%;
+            padding: 0 20px
+        }
+        header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+        }
+        footer {
+            text-align: right;
+            padding: 5px 10px
+        }
+
+        /* Menu Base Styles */
+        nav {
+          width: 100%;
+          max-width: calc( 100% - 2rem);
+          margin: 0 auto;
+          background-color: #333
+        }
+        nav a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          background-color: #333;
+          color: white;
+          border: 1px solid #555;
+        }
+        nav a:hover {
+          background-color: #555
+        }
+        /* Screen >= 758px */
+        @media screen and (min-width: 768px ) {
+          /* Menu Flex Styles */
+          nav {
+            display: flex !important;
+            justify-content: flex-start;
+          }
+          nav a {
+            flex: 1;
+          }
+          section {
+            padding: 0 2rem;
+          }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./controls/lists/index.html">Listas Personalizadas</a>
+            <a href="./controls/shadows/index.html">Sombras Realistas</a>
+            <a href="./controls/hero/index.html">Hero Image</a>
+            <a href="./slider/index.html">Silder</a>
+            <a href="./hamburger/index.html">Sidebar</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Controles y Efectos</h1>
+        
+    </main>
+
+    <footer></footer>
+
+    <script>
+        document.querySelector('footer').innerHTML = ` &copy; ${new Date().getFullYear()}`;
+    </script>
+
+</body>
+</html>
